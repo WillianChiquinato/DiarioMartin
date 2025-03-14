@@ -373,7 +373,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dagger_ [diamond]_0: 8538337955411587884
+      dagger_ [diamond]_1: 7476241321935996667
+      dagger_ [diamond]_2: -9155695681329892997
+      dagger_ [diamond]_3: 5758667230513095065
+      dagger_ [diamond]_4: -1568278923024142279
+      dagger_ [diamond]_5: 9217560651311829970
+      dagger_ [diamond]_6: 2896069733625700197
+      dagger_ [diamond]_7: -6858637061457023069
+      dagger_ [diamond]_8: 8353382814367334424
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

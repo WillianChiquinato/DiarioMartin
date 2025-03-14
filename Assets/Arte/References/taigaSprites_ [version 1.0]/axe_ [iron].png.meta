@@ -273,7 +273,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      axe_ [iron]_0: -3391303503474845994
+      axe_ [iron]_1: -1666219713225666314
+      axe_ [iron]_2: -4523493862401573315
+      axe_ [iron]_3: -6831777329574299471
+      axe_ [iron]_4: 8755372709903595180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

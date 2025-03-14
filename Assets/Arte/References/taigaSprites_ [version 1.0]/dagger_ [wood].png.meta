@@ -373,7 +373,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dagger_ [wood]_0: -7399410593226856705
+      dagger_ [wood]_1: 6479605970076481191
+      dagger_ [wood]_2: 5905693305325249995
+      dagger_ [wood]_3: 4704749960508798936
+      dagger_ [wood]_4: -5788137742889807245
+      dagger_ [wood]_5: 3145092986281756763
+      dagger_ [wood]_6: 4488959632693861884
+      dagger_ [wood]_7: 2578796323671945076
+      dagger_ [wood]_8: 3638323186721002417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
