@@ -3,8 +3,7 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField]
-    private int currentHealth, maxHealth;
+    public int currentHealth, maxHealth;
 
     public UnityEvent<GameObject> OnHitWithReferences, OnDeathWithReferences;
 
@@ -29,6 +28,7 @@ public class Health : MonoBehaviour
         }
 
         currentHealth -= amount;
+        this.gameObject.GetComponentInChildren<Animator>().SetTrigger("Hit");
 
         if (currentHealth > 0)
         {
@@ -38,7 +38,9 @@ public class Health : MonoBehaviour
         {
             isDead = true;
             OnDeathWithReferences.Invoke(sender);
-            Destroy(gameObject, 0.5f);
+            this.gameObject.GetComponentInChildren<Animator>().SetBool("Death", true);
+            this.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            Destroy(gameObject, 3f);
         }
     }
 }

@@ -59,10 +59,26 @@ public class CameraDinamica : MonoBehaviour
     List<Transform> FindVisibleEnemies()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        return enemies
-            .Where(e => IsVisible(e.transform))
-            .Select(e => e.transform)
-            .ToList();
+
+        List<Transform> visibleEnemies = new List<Transform>();
+
+        foreach (GameObject obj in enemies)
+        {
+            if (!obj.GetComponent<Health>().isDead)
+            {
+                visibleEnemies.AddRange(
+                    enemies
+                    .Where(e => IsVisible(e.transform))
+                    .Select(e => e.transform)
+                );
+            }
+            else
+            {
+                Debug.Log("Enemy is dead");
+            }
+        }
+
+        return visibleEnemies;
     }
 
     bool IsVisible(Transform enemy)

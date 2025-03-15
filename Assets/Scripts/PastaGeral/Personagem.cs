@@ -1,5 +1,6 @@
+using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Personagem : MonoBehaviour
 {
@@ -13,26 +14,43 @@ public class Personagem : MonoBehaviour
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
     public Vector2 MovementInput { get => movementInput; set => movementInput = value; }
 
+    private LevelLoader transicao;
+
     private void Awake()
     {
         agentAnimations = GetComponentInChildren<PlayerAnimation>();
         weaponParent = GetComponentInChildren<WeaponParent>();
         agentMover = GetComponent<PersonagemMover>();
+
+        transicao = GameObject.FindFirstObjectByType<LevelLoader>();
     }
 
     public void PerformAttack()
     {
-        weaponParent.Attack();
+        if (!gameObject.GetComponent<Health>().isDead)
+        {
+            weaponParent.Attack();
+        }
     }
 
     private void Update()
     {
-        // pointerInput = GetPointerInput();
-        // movementInput = Moviment.action.ReadValue<Vector2>().normalized;
+        if (GameObject.Find("Player").GetComponent<Health>().isDead)
+        {
+            //Cena atual.
+            StartCoroutine(transicaoPlayerDeath());
+        }
 
-        agentMover.movimentInput = MovementInput;
-        weaponParent.PointerPosition = pointerInput;
-        AnimateCharacter();
+        if (!gameObject.GetComponent<Health>().isDead)
+        {
+            agentMover.movimentInput = MovementInput;
+            weaponParent.PointerPosition = pointerInput;
+            AnimateCharacter();
+        }
+        else
+        {
+            agentMover.movimentInput = Vector2.zero;
+        }
     }
 
     private void AnimateCharacter()
@@ -40,5 +58,11 @@ public class Personagem : MonoBehaviour
         Vector2 lookDirection = pointerInput - (Vector2)transform.position;
         agentAnimations.RotateToPointer(lookDirection);
         agentAnimations.PlayAnimation(MovementInput);
+    }
+
+    IEnumerator transicaoPlayerDeath()
+    {
+        yield return new WaitForSeconds(1.5f);
+        transicao.Transicao(SceneManager.GetActiveScene().name);
     }
 }
