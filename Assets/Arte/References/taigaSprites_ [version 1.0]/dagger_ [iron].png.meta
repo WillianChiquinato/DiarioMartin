@@ -70,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -166,12 +166,12 @@ TextureImporter:
       name: dagger_ [iron]_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 69
-        width: 7
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.55965686, y: 0.2390008}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,12 +188,12 @@ TextureImporter:
       name: dagger_ [iron]_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 38
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.50372845, y: 0.27255774}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: dagger_ [iron]_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 38
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49627125, y: 0.27255797}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: dagger_ [iron]_3
       rect:
         serializedVersion: 2
-        x: 74
-        y: 38
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4962716, y: 0.2800151}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: dagger_ [iron]_4
       rect:
         serializedVersion: 2
-        x: 108
-        y: 38
-        width: 8
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4962709, y: 0.27628648}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,12 +276,12 @@ TextureImporter:
       name: dagger_ [iron]_5
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1
-        width: 7
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.1868008}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,12 +298,12 @@ TextureImporter:
       name: dagger_ [iron]_6
       rect:
         serializedVersion: 2
-        x: 45
-        y: 2
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999976, y: 0.2203579}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: dagger_ [iron]_7
       rect:
         serializedVersion: 2
-        x: 77
-        y: 3
-        width: 7
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4962716, y: 0.24645771}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,12 +342,12 @@ TextureImporter:
       name: dagger_ [iron]_8
       rect:
         serializedVersion: 2
-        x: 109
-        y: 5
-        width: 7
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49254227, y: 0.261372}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BotaoEmSi_0: -2651425736020740553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

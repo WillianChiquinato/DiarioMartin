@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FundoDiario de martin_0: 8726017467180323333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

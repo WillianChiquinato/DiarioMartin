@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tela preta_0: 5765103438343822452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

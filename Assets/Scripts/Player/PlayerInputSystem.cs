@@ -5,14 +5,37 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputSystem : MonoBehaviour
 {
+    public static PlayerInputManager playerInputManager { get; set; }
+
+    public static bool PlayerWeaponActive = false;
+    public static bool PlayerEstilingueActive = false;
+    public GameObject WeaponObject;
+
     public UnityEvent<Vector2> OnMovimentInput, OnPointInput;
     public UnityEvent OnAttack;
 
     [SerializeField]
     private InputActionReference Moviment, attack, PointPosition;
 
+    private void Awake()
+    {
+        if (!PlayerWeaponActive)
+        {
+            WeaponObject.SetActive(false);
+        }
+    }
+
     void Update()
     {
+        if (!PlayerWeaponActive)
+        {
+            WeaponObject.SetActive(false);
+        }
+        else
+        {
+            WeaponObject.SetActive(true);
+        }
+
         OnMovimentInput?.Invoke(Moviment.action.ReadValue<Vector2>().normalized);
         OnPointInput?.Invoke(GetPointerInput());
     }
@@ -29,7 +52,10 @@ public class PlayerInputSystem : MonoBehaviour
 
     private void PerformAttack(InputAction.CallbackContext context)
     {
-        OnAttack?.Invoke();
+        if (PlayerWeaponActive)
+        {
+            OnAttack?.Invoke();
+        }
     }
 
     private Vector2 GetPointerInput()

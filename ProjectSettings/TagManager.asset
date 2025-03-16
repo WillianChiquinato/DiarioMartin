@@ -26,9 +26,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Layer 1
+  - Layer 2
+  - Layer 3
   - 
   - 
   - 
@@ -40,19 +40,31 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 471263139
+    uniqueID: 4243973431
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Players
+    uniqueID: 1500166547
+    locked: 0
+  - name: Layer 1
+    uniqueID: 2425651459
+    locked: 0
+  - name: Layer 2
+    uniqueID: 4250941897
+    locked: 0
+  - name: Layer 3
+    uniqueID: 4189426099
+    locked: 0
   - name: Foreground
-    uniqueID: 2427216263
+    uniqueID: 3326814491
     locked: 0
   - name: HUD
-    uniqueID: 2687824847
+    uniqueID: 3171812231
     locked: 0
   - name: Transicoes
-    uniqueID: 3029929373
+    uniqueID: 2667441341
     locked: 0
   m_RenderingLayers:
   - Default
