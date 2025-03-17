@@ -1,13 +1,21 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PegarItem : MonoBehaviour
 {
     public TextMeshPro textoWeapon;
+    public GameObject objetoMissao;
 
     void Awake()
     {
+        objetoMissao.SetActive(false);
+
         textoWeapon.text = "";
+        if (PlayerInputSystem.PlayerWeaponActive)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -15,10 +23,19 @@ public class PegarItem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             textoWeapon.text = "Pressione E para pegar a arma";
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
-                Destroy(gameObject);
-                PlayerInputSystem.PlayerWeaponActive = true;
+                if (this.gameObject.CompareTag("Missao"))
+                {
+                    objetoMissao.SetActive(true);
+                    Destroy(this.gameObject);
+                    PlayerInputSystem.PlayerWeaponActive = true;
+                }
+                else
+                {
+                    PlayerInputSystem.PlayerWeaponActive = true;
+                    Destroy(this.gameObject);
+                }
             }
         }
     }

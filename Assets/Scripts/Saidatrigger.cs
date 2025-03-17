@@ -18,7 +18,7 @@ public class Saidatrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             textoSaida.text = "Pressione E para sair";
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 levelLoader.Transicao(SceneName);
             }

@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoWeapon: {fileID: 1616610640}
+  objetoMissao: {fileID: 0}
 --- !u!1 &36458610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3213,12 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
+--- !u!1 &941421329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821790697945517029, guid: 75a36f9233dc47245b6c6288dfadd3b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6400355746668796740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1014491649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3261,7 +3268,7 @@ GameObject:
   - component: {fileID: 1240919855}
   m_Layer: 0
   m_Name: MissaoPegar
-  m_TagString: Untagged
+  m_TagString: Missao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3279,6 +3286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoWeapon: {fileID: 117458145}
+  objetoMissao: {fileID: 941421329}
 --- !u!95 &1240919851
 Animator:
   serializedVersion: 7
@@ -3508,8 +3516,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 471263139
-  m_SortingLayer: 0
+  m_SortingLayerID: -50993865
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

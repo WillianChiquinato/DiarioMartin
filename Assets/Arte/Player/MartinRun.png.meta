@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 25d7d5682ac668844b5f45acd0c02703
+guid: 50bf53e642181b84eb6fe195434d5cbf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2228151447699918290
-    second: PageSprite_0
+      213: -7161349319200878385
+    second: MartinRun_0
+  - first:
+      213: -8223663389340555156
+    second: MartinRun_1
+  - first:
+      213: 2250030828232999568
+    second: MartinRun_2
+  - first:
+      213: -3085749232840406885
+    second: MartinRun_3
+  - first:
+      213: -6248656281545256435
+    second: MartinRun_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,12 +151,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PageSprite_0
+      name: MartinRun_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 26
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,8 +166,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e22f21640140411e0800000000000000
-      internalID: -2228151447699918290
+      spriteID: fc0db849cb6cd9c90800000000000000
+      internalID: -7161349319200878385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinRun_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68a8fdd7bdafdd80800000000000000
+      internalID: -8223663389340555156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinRun_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092818afd17b93f10800000000000000
+      internalID: 2250030828232999568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinRun_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b980d96fb673d25d0800000000000000
+      internalID: -3085749232840406885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinRun_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d025bfef7305849a0800000000000000
+      internalID: -6248656281545256435
       vertices: []
       indices: 
       edges: []
@@ -174,7 +274,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PageSprite_0: -2228151447699918290
+      MartinRun_0: -7161349319200878385
+      MartinRun_1: -8223663389340555156
+      MartinRun_2: 2250030828232999568
+      MartinRun_3: -3085749232840406885
+      MartinRun_4: -6248656281545256435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

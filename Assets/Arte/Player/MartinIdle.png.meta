@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 25d7d5682ac668844b5f45acd0c02703
+guid: 7048f39009f71604e9e66cb24545f376
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2228151447699918290
-    second: PageSprite_0
+      213: -2325964515282799937
+    second: MartinIdle_0
+  - first:
+      213: 9030617774716642275
+    second: MartinIdle_1
+  - first:
+      213: -5860862942258938342
+    second: MartinIdle_2
+  - first:
+      213: -6312718840040161194
+    second: MartinIdle_3
+  - first:
+      213: -6463174999662013516
+    second: MartinIdle_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,12 +151,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PageSprite_0
+      name: MartinIdle_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 26
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,8 +166,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e22f21640140411e0800000000000000
-      internalID: -2228151447699918290
+      spriteID: fb2b76ac89388bfd0800000000000000
+      internalID: -2325964515282799937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinIdle_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e360541503335d70800000000000000
+      internalID: 9030617774716642275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinIdle_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1eb769c4380aaea0800000000000000
+      internalID: -5860862942258938342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinIdle_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6508d7449a7b468a0800000000000000
+      internalID: -6312718840040161194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MartinIdle_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3d5f7c4903e46a0800000000000000
+      internalID: -6463174999662013516
       vertices: []
       indices: 
       edges: []
@@ -174,7 +274,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PageSprite_0: -2228151447699918290
+      MartinIdle_0: -2325964515282799937
+      MartinIdle_1: 9030617774716642275
+      MartinIdle_2: -5860862942258938342
+      MartinIdle_3: -6312718840040161194
+      MartinIdle_4: -6463174999662013516
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
