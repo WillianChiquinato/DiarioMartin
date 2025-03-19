@@ -9,9 +9,20 @@ public class PegarItem : MonoBehaviour
 
     void Awake()
     {
-        objetoMissao.SetActive(false);
+        if (objetoMissao == null)
+        {
+            Debug.Log("Item weapon");
+        }
+        else
+        {
+            objetoMissao.SetActive(false);
+        }
 
         textoWeapon.text = "";
+    }
+
+    void Start()
+    {
         if (PlayerInputSystem.PlayerWeaponActive)
         {
             Destroy(this.gameObject);
@@ -27,8 +38,7 @@ public class PegarItem : MonoBehaviour
             {
                 if (this.gameObject.CompareTag("Missao"))
                 {
-                    objetoMissao.SetActive(true);
-                    Destroy(this.gameObject);
+                    this.objetoMissao.SetActive(true);
                     PlayerInputSystem.PlayerWeaponActive = true;
                 }
                 else
@@ -46,5 +56,11 @@ public class PegarItem : MonoBehaviour
         {
             textoWeapon.text = "";
         }
+    }
+
+    public void sairButton()
+    {
+        this.objetoMissao.SetActive(false);
+        Destroy(this.gameObject, 1f);
     }
 }
