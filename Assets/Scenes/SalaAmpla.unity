@@ -295,6 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoWeapon: {fileID: 1616610640}
   objetoMissao: {fileID: 0}
+  KnifeIcon: {fileID: 794494018}
 --- !u!1 &36458610
 GameObject:
   m_ObjectHideFlags: 0
@@ -4571,6 +4572,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a44afd302829664892af465624fc97c, type: 3}
+--- !u!1 &794494018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7620072058637281124, guid: 75a36f9233dc47245b6c6288dfadd3b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6400355746668796740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &919492545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4773,6 +4780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoWeapon: {fileID: 597228220}
   objetoMissao: {fileID: 986282334}
+  KnifeIcon: {fileID: 0}
 --- !u!95 &937854159
 Animator:
   serializedVersion: 7
@@ -4993,6 +5001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoWeapon: {fileID: 117458145}
   objetoMissao: {fileID: 941421329}
+  KnifeIcon: {fileID: 0}
 --- !u!95 &1240919851
 Animator:
   serializedVersion: 7

@@ -6,9 +6,19 @@ public class PegarItem : MonoBehaviour
 {
     public TextMeshPro textoWeapon;
     public GameObject objetoMissao;
+    public GameObject KnifeIcon;
 
     void Awake()
     {
+        if (KnifeIcon == null)
+        {
+            Debug.Log("Item missão");
+        }
+        else
+        {
+            KnifeIcon.SetActive(false);
+        }
+
         if (objetoMissao == null)
         {
             Debug.Log("Item weapon");
@@ -23,9 +33,17 @@ public class PegarItem : MonoBehaviour
 
     void Start()
     {
-        if (PlayerInputSystem.PlayerWeaponActive)
+        if (PlayerInputSystem.PlayerWeaponActive && !this.gameObject.CompareTag("Missao"))
         {
             Destroy(this.gameObject);
+            if (KnifeIcon == null)
+            {
+                Debug.Log("Item missão");
+            }
+            else
+            {
+                KnifeIcon.SetActive(true);
+            }
         }
     }
 
@@ -44,6 +62,7 @@ public class PegarItem : MonoBehaviour
                 else
                 {
                     PlayerInputSystem.PlayerWeaponActive = true;
+                    KnifeIcon.SetActive(true);
                     Destroy(this.gameObject);
                 }
             }
