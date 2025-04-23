@@ -97,7 +97,6 @@ public class EnemyAI : MonoBehaviour
                 yield return new WaitForSeconds(aiUpdateDelay);
                 StartCoroutine(ChaseAndAttack());
             }
-
         }
     }
 }
