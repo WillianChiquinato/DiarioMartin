@@ -8,10 +8,11 @@ public class PlayerInputSystem : MonoBehaviour
 {
     public static PlayerInputManager playerInputManager { get; set; }
     public Camera cameraMouse;
+    public GameObject bulletPrefab;
 
     public GameObject EstilingueObject;
     public static bool PlayerWeaponActive = false;
-    public static bool PlayerEstilingueActive = false;
+    public static bool PlayerEstilingueActive = true;
     public GameObject WeaponObject;
     public  Vector3 mousePosition;
 
@@ -95,8 +96,6 @@ public class PlayerInputSystem : MonoBehaviour
         if (PlayerEstilingueActive && carregandoEstilingue)
         {
             carregandoEstilingue = false;
-            WeaponObject.SetActive(true);
-            EstilingueObject.SetActive(false);
             StartCoroutine(WeaponObjectCoroutina());
             Debug.Log("Atirando estilingue!!");
         }
@@ -104,7 +103,20 @@ public class PlayerInputSystem : MonoBehaviour
 
     IEnumerator WeaponObjectCoroutina()
     {
-        yield return new WaitForSeconds(0.5f);
+        WeaponObject.SetActive(true);
+
+        //Instancia o estilingue na posição do ponto de spawn.
+        GameObject estilingue = Instantiate(bulletPrefab, EstilingueObject.transform.position, Quaternion.identity);
+        //Define a direção do estilingue para o player.
+        Vector2 direction = (mousePosition - EstilingueObject.transform.position).normalized;
+        estilingue.GetComponent<Rigidbody2D>().linearVelocity = direction * 35f;
+
+        //O objeto rotaciona para a direção do tiro.
+        float angulo = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        estilingue.transform.rotation = Quaternion.AngleAxis(angulo, Vector3.forward);
+
+        yield return new WaitForSeconds(0.2f);
+        EstilingueObject.SetActive(false);
         WeaponObject.SetActive(true);
     }
 

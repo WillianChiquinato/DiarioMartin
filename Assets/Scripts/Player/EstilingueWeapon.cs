@@ -7,7 +7,7 @@ public class EstilingueWeapon : MonoBehaviour
 
     void Update()
     {
-       if (IsAttacking)
+        if (IsAttacking)
         {
             return;
         }
@@ -34,6 +34,6 @@ public class EstilingueWeapon : MonoBehaviour
         else
         {
             WeaponRender.sortingOrder = characterRender.sortingOrder + 1;
-        } 
+        }
     }
 }
