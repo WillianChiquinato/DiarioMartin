@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "EstilingueAttack",
+                    "type": "Button",
+                    "id": "c5f3ff06-b903-444b-a250-ea7fb54c8bea",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -110,6 +119,17 @@
                     "action": "Moviment",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ef905241-a924-411b-82c8-99beb7c50a6e",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EstilingueAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

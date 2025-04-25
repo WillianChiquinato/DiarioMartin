@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 5759dbfc0c252544cbb33a5aa5467d3f
+guid: bcaf58c3fa9f4b54298d084edfd90f8a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7006197878996634243
-    second: Estilingue_0
+      213: -659079613129068537
+    second: FantasmaIdle_0
+  - first:
+      213: -6307522028936766684
+    second: FantasmaIdle_1
+  - first:
+      213: -8672888741970073738
+    second: FantasmaIdle_2
+  - first:
+      213: 8643085985134297869
+    second: FantasmaIdle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,23 +148,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Estilingue_0
+      name: FantasmaIdle_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 77
-        width: 175
-        height: 315
+        x: 0
+        y: 0
+        width: 125
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38a80bbb9d30b3160800000000000000
-      internalID: 7006197878996634243
+      spriteID: 7007db4759a7ad6f0800000000000000
+      internalID: -659079613129068537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42bd544222e2778a0800000000000000
+      internalID: -6307522028936766684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677a36ed3a5b3a780800000000000000
+      internalID: -8672888741970073738
       vertices: []
       indices: 
       edges: []
@@ -164,7 +217,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 37cf83423a4d8c94786af5aa93f7de06
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +227,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Estilingue_0: 7006197878996634243
+      FantasmaIdle_0: -659079613129068537
+      FantasmaIdle_1: -6307522028936766684
+      FantasmaIdle_2: -8672888741970073738
+      FantasmaIdle_3: 8643085985134297869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

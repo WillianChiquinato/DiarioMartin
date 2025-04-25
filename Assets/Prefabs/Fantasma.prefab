@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1957199807131856086}
   - component: {fileID: 3103401342710412722}
   - component: {fileID: 8266111449780242957}
+  - component: {fileID: 2550201182078789917}
   - component: {fileID: 9023515425694353800}
   - component: {fileID: 6790583851887761761}
   - component: {fileID: 3996571411035617961}
@@ -81,14 +82,14 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -6312718840040161194, guid: 7048f39009f71604e9e66cb24545f376,
+  m_SortingOrder: 100
+  m_Sprite: {fileID: -215204084042926388, guid: 284410d3c16f400409ccb387d9a49ba6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.25, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3286377263135713275}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -120,7 +121,29 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 3
+  m_Constraints: 0
+--- !u!95 &2550201182078789917
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3286377263135713275}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93bf44414911e6440ab948619bc7ef51, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &9023515425694353800
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -151,12 +174,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.1888068}
-  m_Size: {x: 0.5, y: 0.62238604}
+  m_Offset: {x: 0.004897334, y: -0.11045125}
+  m_Size: {x: 0.39226055, y: 0.7007415}
   m_Direction: 0
 --- !u!114 &6790583851887761761
 MonoBehaviour:
@@ -173,9 +196,13 @@ MonoBehaviour:
   estilinguePrefab: {fileID: 7361008770127332537, guid: 09c8253fb507a2c40b3b032d2866306f,
     type: 3}
   estilingueSpawnPoint: {fileID: 4592588772409248884}
+  rb: {fileID: 0}
+  direction: {x: 0, y: 0, z: 0}
   playerInputSystem: {fileID: 0}
   distanciaPlayer: 0
+  fantasmaHealth: {fileID: 0}
   attackCooldown: 2
+  speed: 2
 --- !u!114 &3996571411035617961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +306,7 @@ Transform:
   m_GameObject: {fileID: 4592588772409248884}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.121, y: -0.206, z: 0}
+  m_LocalPosition: {x: 0.121, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

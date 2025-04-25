@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SalaAmpla.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CenaPosBoss.unity
+    guid: 1180f6a8305ca094886289c3331f00ed
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

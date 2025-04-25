@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: 284410d3c16f400409ccb387d9a49ba6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -215204084042926388
+    second: FantasmaAttack_Death-removebg-preview_0
+  - first:
+      213: 2023505547948631226
+    second: FantasmaAttack_Death-removebg-preview_1
+  - first:
+      213: -4986607304882870846
+    second: FantasmaAttack_Death-removebg-preview_2
+  - first:
+      213: -1755531856508251571
+    second: FantasmaAttack_Death-removebg-preview_3
+  - first:
+      213: -961283673053328121
+    second: FantasmaAttack_Death-removebg-preview_4
+  - first:
+      213: -2569920576055832172
+    second: FantasmaAttack_Death-removebg-preview_5
+  - first:
+      213: 6228446964770292222
+    second: FantasmaAttack_Death-removebg-preview_6
+  - first:
+      213: 338238163744517084
+    second: FantasmaAttack_Death-removebg-preview_7
+  - first:
+      213: -9029472783670628771
+    second: FantasmaAttack_Death-removebg-preview_8
+  - first:
+      213: 4470920418430246144
+    second: FantasmaAttack_Death-removebg-preview_9
+  - first:
+      213: -6560885295387153999
+    second: FantasmaAttack_Death-removebg-preview_10
+  - first:
+      213: 2779969841899801374
+    second: FantasmaAttack_Death-removebg-preview_11
+  - first:
+      213: 4825908972965765075
+    second: FantasmaAttack_Death-removebg-preview_12
+  - first:
+      213: -5802239178426600034
+    second: FantasmaAttack_Death-removebg-preview_13
+  - first:
+      213: 8194046444527147498
+    second: FantasmaAttack_Death-removebg-preview_14
+  - first:
+      213: 6116594204414912433
+    second: FantasmaAttack_Death-removebg-preview_15
+  - first:
+      213: 7247803368304339294
+    second: FantasmaAttack_Death-removebg-preview_16
+  - first:
+      213: 4054786337971749242
+    second: FantasmaAttack_Death-removebg-preview_17
+  - first:
+      213: 6282902457165706691
+    second: FantasmaAttack_Death-removebg-preview_18
+  - first:
+      213: -6100547399793033002
+    second: FantasmaAttack_Death-removebg-preview_19
+  - first:
+      213: -5834660261331366555
+    second: FantasmaAttack_Death-removebg-preview_20
+  - first:
+      213: -8249430496154108989
+    second: FantasmaAttack_Death-removebg-preview_21
+  - first:
+      213: 1380530093145987524
+    second: FantasmaAttack_Death-removebg-preview_22
+  - first:
+      213: 7184638635398452397
+    second: FantasmaAttack_Death-removebg-preview_23
+  - first:
+      213: -7759091864875359406
+    second: FantasmaAttack_Death-removebg-preview_24
+  - first:
+      213: 8037115679064181621
+    second: FantasmaAttack_Death-removebg-preview_25
+  - first:
+      213: -6322293992913040227
+    second: FantasmaAttack_Death-removebg-preview_26
+  - first:
+      213: -9050566526209200902
+    second: FantasmaAttack_Death-removebg-preview_27
+  - first:
+      213: 1145484347443336025
+    second: FantasmaAttack_Death-removebg-preview_28
+  - first:
+      213: -4163002459285856096
+    second: FantasmaAttack_Death-removebg-preview_29
+  - first:
+      213: 192324644781195435
+    second: FantasmaAttack_Death-removebg-preview_30
+  - first:
+      213: 4457682986014322947
+    second: FantasmaAttack_Death-removebg-preview_31
+  - first:
+      213: -8492711031810427728
+    second: FantasmaAttack_Death-removebg-preview_32
+  - first:
+      213: 6882504941437441870
+    second: FantasmaAttack_Death-removebg-preview_33
+  - first:
+      213: 9006515113804624803
+    second: FantasmaAttack_Death-removebg-preview_34
+  - first:
+      213: 1309286383459735692
+    second: FantasmaAttack_Death-removebg-preview_35
+  - first:
+      213: -838089777452312740
+    second: FantasmaAttack_Death-removebg-preview_36
+  - first:
+      213: -6237362545646308059
+    second: FantasmaAttack_Death-removebg-preview_37
+  - first:
+      213: -4216645610860847192
+    second: FantasmaAttack_Death-removebg-preview_38
+  - first:
+      213: 4736214017732538483
+    second: FantasmaAttack_Death-removebg-preview_39
+  - first:
+      213: -1924482851266630922
+    second: FantasmaAttack_Death-removebg-preview_40
+  - first:
+      213: -7140573633677203392
+    second: FantasmaAttack_Death-removebg-preview_41
+  - first:
+      213: 1472869228617835000
+    second: FantasmaAttack_Death-removebg-preview_42
+  - first:
+      213: -1444716064010291074
+    second: FantasmaAttack_Death-removebg-preview_43
+  - first:
+      213: -1469203782936334890
+    second: FantasmaAttack_Death-removebg-preview_44
+  - first:
+      213: 4267829244584969889
+    second: FantasmaAttack_Death-removebg-preview_45
+  - first:
+      213: 7306155752450113892
+    second: FantasmaAttack_Death-removebg-preview_46
+  - first:
+      213: -8905162007790061073
+    second: FantasmaAttack_Death-removebg-preview_47
+  - first:
+      213: -2766248181521413663
+    second: FantasmaAttack_Death-removebg-preview_48
+  - first:
+      213: 40894855895571606
+    second: FantasmaAttack_Death-removebg-preview_49
+  - first:
+      213: 3843598555025362309
+    second: FantasmaAttack_Death-removebg-preview_50
+  - first:
+      213: 730911222595220849
+    second: FantasmaAttack_Death-removebg-preview_51
+  - first:
+      213: 8380613345101740030
+    second: FantasmaAttack_Death-removebg-preview_52
+  - first:
+      213: -6206349856079812401
+    second: FantasmaAttack_Death-removebg-preview_53
+  - first:
+      213: 1218697211241896054
+    second: FantasmaAttack_Death-removebg-preview_54
+  - first:
+      213: 7705973235951811364
+    second: FantasmaAttack_Death-removebg-preview_55
+  - first:
+      213: -5331861923476448845
+    second: FantasmaAttack_Death-removebg-preview_56
+  - first:
+      213: -9164126917795777987
+    second: FantasmaAttack_Death-removebg-preview_57
+  - first:
+      213: 3068472407204255560
+    second: FantasmaAttack_Death-removebg-preview_58
+  - first:
+      213: 7463615465184778144
+    second: FantasmaAttack_Death-removebg-preview_59
+  - first:
+      213: -67449527335728558
+    second: FantasmaAttack_Death-removebg-preview_60
+  - first:
+      213: 4983887871457337632
+    second: FantasmaAttack_Death-removebg-preview_61
+  - first:
+      213: -362016363316884855
+    second: FantasmaAttack_Death-removebg-preview_62
+  - first:
+      213: 2049798206770105291
+    second: FantasmaAttack_Death-removebg-preview_63
+  - first:
+      213: 6366209254239547350
+    second: FantasmaAttack_Death-removebg-preview_64
+  - first:
+      213: -8480636773567046675
+    second: FantasmaAttack_Death-removebg-preview_65
+  - first:
+      213: -2894943557942248581
+    second: FantasmaAttack_Death-removebg-preview_66
+  - first:
+      213: -1014751912611414968
+    second: FantasmaAttack_Death-removebg-preview_67
+  - first:
+      213: 7366577002426574049
+    second: FantasmaAttack_Death-removebg-preview_68
+  - first:
+      213: 104470817286633606
+    second: FantasmaAttack_Death-removebg-preview_69
+  - first:
+      213: -1214447189975166789
+    second: FantasmaAttack_Death-removebg-preview_70
+  - first:
+      213: 6240491873207784486
+    second: FantasmaAttack_Death-removebg-preview_71
+  - first:
+      213: -2529559665297807414
+    second: FantasmaAttack_Death-removebg-preview_72
+  - first:
+      213: -5127256716205051234
+    second: FantasmaAttack_Death-removebg-preview_73
+  - first:
+      213: -8691069076186470369
+    second: FantasmaAttack_Death-removebg-preview_74
+  - first:
+      213: 5608005777311896141
+    second: FantasmaAttack_Death-removebg-preview_75
+  - first:
+      213: 3356348590387964913
+    second: FantasmaAttack_Death-removebg-preview_76
+  - first:
+      213: -4270434090466803975
+    second: FantasmaAttack_Death-removebg-preview_77
+  - first:
+      213: 7381860188640864489
+    second: FantasmaAttack_Death-removebg-preview_78
+  - first:
+      213: -2316082935903081239
+    second: FantasmaAttack_Death-removebg-preview_79
+  - first:
+      213: -1513908558858248517
+    second: FantasmaAttack_Death-removebg-preview_80
+  - first:
+      213: 282953602497647254
+    second: FantasmaAttack_Death-removebg-preview_81
+  - first:
+      213: 6274124748345636020
+    second: FantasmaAttack_Death-removebg-preview_82
+  - first:
+      213: -2727513951245718538
+    second: FantasmaAttack_Death-removebg-preview_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FantasmaAttack_Death-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 125
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc678689601730df0800000000000000
+      internalID: -215204084042926388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaAttack_Death-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 250
+        width: 125
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4a28a239fe41c10800000000000000
+      internalID: 2023505547948631226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaAttack_Death-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 125
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5a61e83130ccab0800000000000000
+      internalID: -4986607304882870846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaAttack_Death-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 125
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4291f4e31913a7e0800000000000000
+      internalID: -1755531856508251571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaAttack_Death-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 27
+        width: 125
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d064ba795d8a2f0800000000000000
+      internalID: -961283673053328121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaAttack_Death-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 27
+        width: 125
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49199332adec55cd0800000000000000
+      internalID: -2569920576055832172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaAttack_Death-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 27
+        width: 125
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef14e75c383ef6650800000000000000
+      internalID: 6228446964770292222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dc743d6becdce87468b20b36ed562412
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FantasmaAttack_Death-removebg-preview_0: -215204084042926388
+      FantasmaAttack_Death-removebg-preview_1: 2023505547948631226
+      FantasmaAttack_Death-removebg-preview_2: -4986607304882870846
+      FantasmaAttack_Death-removebg-preview_3: -1755531856508251571
+      FantasmaAttack_Death-removebg-preview_4: -961283673053328121
+      FantasmaAttack_Death-removebg-preview_5: -2569920576055832172
+      FantasmaAttack_Death-removebg-preview_6: 6228446964770292222
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

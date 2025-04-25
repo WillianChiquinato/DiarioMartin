@@ -7,9 +7,19 @@ public class PegarItem : MonoBehaviour
     public TextMeshPro textoWeapon;
     public GameObject objetoMissao;
     public GameObject KnifeIcon;
+    public GameObject estilingueIcon;
 
     void Awake()
     {
+        if (estilingueIcon == null)
+        {
+            Debug.Log("Item missão");
+        }
+        else
+        {
+            estilingueIcon.SetActive(false);
+        }
+
         if (KnifeIcon == null)
         {
             Debug.Log("Item missão");
@@ -45,6 +55,32 @@ public class PegarItem : MonoBehaviour
                 KnifeIcon.SetActive(true);
             }
         }
+
+        if (PlayerInputSystem.PlayerWeaponActive && !this.gameObject.CompareTag("Missao"))
+        {
+            Destroy(this.gameObject);
+            if (KnifeIcon == null)
+            {
+                Debug.Log("Item missão");
+            }
+            else
+            {
+                KnifeIcon.SetActive(true);
+            }
+        }
+
+        if (PlayerInputSystem.PlayerEstilingueActive && !this.gameObject.CompareTag("Missao"))
+        {
+            Destroy(this.gameObject);
+            if (estilingueIcon == null)
+            {
+                Debug.Log("Item missão");
+            }
+            else
+            {
+                estilingueIcon.SetActive(true);
+            }
+        }
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -59,10 +95,16 @@ public class PegarItem : MonoBehaviour
                     this.objetoMissao.SetActive(true);
                     PlayerInputSystem.PlayerWeaponActive = true;
                 }
-                else
+                else if (this.gameObject.name == "WeaponPegar")
                 {
                     PlayerInputSystem.PlayerWeaponActive = true;
                     KnifeIcon.SetActive(true);
+                    Destroy(this.gameObject);
+                }
+                else
+                {
+                    PlayerInputSystem.PlayerEstilingueActive = true;
+                    estilingueIcon.SetActive(true);
                     Destroy(this.gameObject);
                 }
             }
