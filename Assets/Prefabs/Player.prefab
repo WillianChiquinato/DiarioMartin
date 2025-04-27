@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMouse: {fileID: 0}
+  bulletPrefab: {fileID: 0}
   EstilingueObject: {fileID: 0}
   WeaponObject: {fileID: 1254598709926521119}
   mousePosition: {x: 0, y: 0, z: 0}
@@ -679,7 +680,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1500166547
   m_SortingLayer: 1
-  m_SortingOrder: 9
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2455656208338857617, guid: 5aed9d59a9ba0d84aa26142f09f15af6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

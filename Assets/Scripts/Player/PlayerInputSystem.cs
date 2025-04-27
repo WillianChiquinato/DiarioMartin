@@ -12,9 +12,9 @@ public class PlayerInputSystem : MonoBehaviour
 
     public GameObject EstilingueObject;
     public static bool PlayerWeaponActive = false;
-    public static bool PlayerEstilingueActive = true;
+    public static bool PlayerEstilingueActive = false;
     public GameObject WeaponObject;
-    public  Vector3 mousePosition;
+    public Vector3 mousePosition;
 
     public UnityEvent<Vector2> OnMovimentInput, OnPointInput;
     public UnityEvent OnAttack;
