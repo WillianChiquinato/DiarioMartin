@@ -51,7 +51,7 @@ public class WeaponParent : MonoBehaviour
         }
         else
         {
-            WeaponRender.sortingOrder = characterRender.sortingOrder + 1;
+            WeaponRender.sortingOrder = characterRender.sortingOrder + 14;
         }
     }
 

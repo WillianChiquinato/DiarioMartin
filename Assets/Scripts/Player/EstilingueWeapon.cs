@@ -27,7 +27,7 @@ public class EstilingueWeapon : MonoBehaviour
 
         transform.localScale = scale;
 
-        if (transform.eulerAngles.z > 0 && transform.eulerAngles.z < 180)
+        if (transform.eulerAngles.z > 0 && transform.eulerAngles.z < 100)
         {
             WeaponRender.sortingOrder = characterRender.sortingOrder - 1;
         }

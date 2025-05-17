@@ -8,10 +8,12 @@ public class BotoesMenu : MonoBehaviour
     public Button botaoSair;
 
     public LevelLoader levelLoader;
+    public GameObject comoJogarMenu;
 
     void Start()
     {
         levelLoader = GameObject.FindFirstObjectByType<LevelLoader>();
+        comoJogarMenu.SetActive(false);
     }
 
     public void Iniciar()
@@ -20,10 +22,15 @@ public class BotoesMenu : MonoBehaviour
         levelLoader.Transicao("Introducao-CutStory");
     }
 
-    public void Opções()
+    public void ComoJogar()
     {
-        Debug.Log("Opções");
-        levelLoader.Transicao("Introducao-CutStory");
+        Debug.Log("Como Jogar");
+        comoJogarMenu.SetActive(true);
+    }
+    public void FecharComoJogar()
+    {
+        Debug.Log("Fechar Como Jogar");
+        comoJogarMenu.SetActive(false);
     }
 
     public void Sair()
@@ -31,5 +38,4 @@ public class BotoesMenu : MonoBehaviour
         Debug.Log("Sair");
         Application.Quit();
     }
-
 }
