@@ -14,14 +14,15 @@ public class PlayerInputSystem : MonoBehaviour
     public static bool PlayerWeaponActive = false;
     public static bool PlayerEstilingueActive = true;
     public GameObject WeaponObject;
-    public  Vector3 mousePosition;
+    public Vector3 mousePosition;
 
     public UnityEvent<Vector2> OnMovimentInput, OnPointInput;
     public UnityEvent OnAttack;
     public bool carregandoEstilingue = false;
+    public float tempoCarregando = 0f;
+    private float tempoMinimoAttackEstilingue = 0.4f;
 
-    [SerializeField]
-    private InputActionReference Moviment, attack, estilingueAttack, PointPosition;
+    public InputActionReference Moviment, attack, estilingueAttack, PointPosition;
 
     private void Awake()
     {
@@ -85,6 +86,7 @@ public class PlayerInputSystem : MonoBehaviour
         if (PlayerEstilingueActive)
         {
             carregandoEstilingue = true;
+            tempoCarregando = Time.time;
             WeaponObject.SetActive(false);
             EstilingueObject.SetActive(true);
             Debug.Log("Carregando estilingue!!");
@@ -96,8 +98,17 @@ public class PlayerInputSystem : MonoBehaviour
         if (PlayerEstilingueActive && carregandoEstilingue)
         {
             carregandoEstilingue = false;
-            StartCoroutine(WeaponObjectCoroutina());
-            Debug.Log("Atirando estilingue!!");
+            float tempoSegurando = Time.time - tempoCarregando;
+
+            if (tempoSegurando >= tempoMinimoAttackEstilingue)
+            {
+                StartCoroutine(WeaponObjectCoroutina());
+                Debug.Log("Atirando estilingue!!");
+            }
+            else
+            {
+                Debug.Log("Soltou muito cedo, não atirou!");
+            }
         }
     }
 

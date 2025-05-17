@@ -9,9 +9,14 @@ public class CameraDinamica : MonoBehaviour
     public CinemachineCamera vCam;
     public Transform cameraFollowTarget;
     public List<Transform> visibleEnemies;
+    public TriggerCutSceneBoss triggerCutSceneBoss;
 
     void Start()
     {
+        if (triggerCutSceneBoss == null)
+        {
+            triggerCutSceneBoss = FindFirstObjectByType<TriggerCutSceneBoss>();
+        }
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -49,6 +54,10 @@ public class CameraDinamica : MonoBehaviour
 
             midpoint /= (visibleEnemies.Count + 1);
             cameraFollowTarget.position = new Vector3(midpoint.x, midpoint.y, cameraFollowTarget.position.z);
+        }
+        else if (triggerCutSceneBoss != null && triggerCutSceneBoss.isCutScene)
+        {
+            Debug.Log("Cutscene in progress");
         }
         else
         {
