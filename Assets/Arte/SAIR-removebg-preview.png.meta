@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SAIR-removebg-preview_0: 7344012792680420302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

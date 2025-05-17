@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Botao-removebg-preview_0: -5340025689165137333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

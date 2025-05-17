@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Diario de martin.sln"
+    "dotnet.defaultSolution": "DiarioMartin.sln"
 }
