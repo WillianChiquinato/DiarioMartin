@@ -282,6 +282,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7008113558105332930, guid: 7a44afd302829664892af465624fc97c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11116,8 +11121,8 @@ SpriteRenderer:
   m_SortingLayerID: 1500166547
   m_SortingLayer: 1
   m_SortingOrder: 10
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.6075471, g: 0.5995229, b: 0.5995229, a: 1}
+  m_Sprite: {fileID: -153073372, guid: 4fad08c5e0e196c4396bdd38eda2c6ef, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11136,8 +11141,8 @@ Transform:
   m_GameObject: {fileID: 1447126163}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.59, y: 61.85, z: 0.5940586}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -2.87, y: 61.97, z: 0.5940586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -11176,8 +11181,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.16, y: 0.16}
+  m_Offset: {x: 0.17554238, y: 0.0058956146}
+  m_Size: {x: 0.8940864, y: 1.9993858}
   m_Direction: 0
 --- !u!50 &1447126167
 Rigidbody2D:
@@ -11249,7 +11254,7 @@ Animator:
   m_GameObject: {fileID: 1447126163}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 582cb8f3c668cb044adacf17e08c0e80, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11274,10 +11279,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+  rb: {fileID: 0}
   pontoDireita: {fileID: 1393734400}
   pontoEsquerda: {fileID: 1777774602}
   playerInputSystem: {fileID: 0}
   cutSceneBoss: {fileID: 0}
+  IsAttacking: 0
+  projetilPrefab: {fileID: 4517367158079259411, guid: 422d692867f3f1a47a4dd092d66dd1a4,
+    type: 3}
+  projetilInstance: {fileID: 0}
+  projetilAttack: 0
+  forcaTiro: 25
+  pontoDeTiro: {fileID: 1447126165}
   velocidade: 3
   tempoDeEspera: 1
   distanciaDeParada: 0.2
@@ -11285,6 +11298,7 @@ MonoBehaviour:
   AttackCooldownTarget: 8
   estaPatrulhando: 0
   isRight: 1
+  Health: {fileID: 0}
 --- !u!114 &1447126171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11878,6 +11892,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fantasma
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286377263135713275, guid: ae62c5a2742bb6e4fa932c44d5a38d9f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
