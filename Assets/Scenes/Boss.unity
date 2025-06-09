@@ -598,13 +598,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 16.33072, y: 46.519176}
-      - {x: 16.571968, y: 65.07629}
-      - {x: -14.052584, y: 64.426476}
-      - {x: -14.162603, y: 46.89681}
+    - - {x: 16.616884, y: 46.57641}
+      - {x: 16.519348, y: 64.550064}
+      - {x: -13.473738, y: 64.58434}
+      - {x: -13.373268, y: 46.686317}
+      - {x: -7.975323, y: 46.707687}
       - {x: -9.357879, y: 15.567411}
       - {x: 12.438726, y: 15.563677}
-      - {x: 12.456608, y: 46.445137}
+      - {x: 12.113213, y: 46.50237}
   m_UseDelaunayMesh: 0
 --- !u!4 &328592455
 Transform:
@@ -2811,7 +2812,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.452732, y: 21.465199, z: -200.00774}
+  m_LocalPosition: {x: 2.3970604, y: 21.46521, z: -200.00774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2943,6 +2944,7 @@ MonoBehaviour:
   pontoCentroCam: {fileID: 48159087}
   playerInputSystem: {fileID: 0}
   triggerCutSceneBoss: {fileID: 0}
+  cinemachineCameraPlayer: {fileID: 0}
   BarraBossUI: {fileID: 321496891}
   boss: {fileID: 0}
   isFighting: 0
@@ -11121,7 +11123,7 @@ SpriteRenderer:
   m_SortingLayerID: 1500166547
   m_SortingLayer: 1
   m_SortingOrder: 10
-  m_Sprite: {fileID: -153073372, guid: 4fad08c5e0e196c4396bdd38eda2c6ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d3fdd3982dcc43d4bb942b32ecc876d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11181,8 +11183,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.17554238, y: 0.0058956146}
-  m_Size: {x: 0.8940864, y: 1.9993858}
+  m_Offset: {x: -0.057195425, y: -0.2841301}
+  m_Size: {x: 0.9155698, y: 1.6055222}
   m_Direction: 0
 --- !u!50 &1447126167
 Rigidbody2D:
@@ -11290,6 +11292,7 @@ MonoBehaviour:
   projetilInstance: {fileID: 0}
   projetilAttack: 0
   forcaTiro: 25
+  jaAtirou: 0
   pontoDeTiro: {fileID: 1447126165}
   velocidade: 3
   tempoDeEspera: 1

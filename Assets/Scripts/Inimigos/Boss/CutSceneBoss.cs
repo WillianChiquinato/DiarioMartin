@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class CutSceneBoss : MonoBehaviour
@@ -7,6 +8,7 @@ public class CutSceneBoss : MonoBehaviour
     public Transform pontoCentroCam;
     public PlayerInputSystem playerInputSystem;
     public TriggerCutSceneBoss triggerCutSceneBoss;
+    public CinemachineCamera cinemachineCameraPlayer;
 
     public GameObject BarraBossUI;
     public Boss boss;
@@ -19,7 +21,10 @@ public class CutSceneBoss : MonoBehaviour
         playerInputSystem = FindFirstObjectByType<PlayerInputSystem>();
         triggerCutSceneBoss = FindFirstObjectByType<TriggerCutSceneBoss>();
         boss = FindFirstObjectByType<Boss>();
+        cinemachineCameraPlayer = FindFirstObjectByType<CinemachineCamera>();
         boss.tag = "Untagged";
+
+        cinemachineCameraPlayer.Lens.OrthographicSize = 5f;
     }
 
     void Update()
@@ -55,5 +60,7 @@ public class CutSceneBoss : MonoBehaviour
         BarraBossUI.SetActive(true);
         boss.tag = "Enemy";
         isFighting = true;
+
+        cinemachineCameraPlayer.Lens.OrthographicSize = Mathf.Lerp(cinemachineCameraPlayer.Lens.OrthographicSize, 6.5f, Time.deltaTime * 2f);
     }
 }

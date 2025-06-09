@@ -16,6 +16,7 @@ public class Boss : MonoBehaviour
     public GameObject projetilInstance;
     public bool projetilAttack = false;
     public float forcaTiro = 10f;
+    public bool jaAtirou = false;
     public Transform pontoDeTiro;
 
 
@@ -45,14 +46,44 @@ public class Boss : MonoBehaviour
         anim.SetBool("Run", estaPatrulhando);
         anim.SetBool("Attack", IsAttacking);
         anim.SetBool("Death", Health.isDead);
+        anim.SetBool("IsAlive", !Health.isDead);
 
         if (Health.isDead)
         {
             rb.bodyType = RigidbodyType2D.Static;
             rb.linearVelocity = Vector2.zero;
+            Destroy(gameObject, 3f);
         }
         else
         {
+            if (Health.currentHealth <= 10f)
+            {
+                AttackCooldownTarget = 4f;
+                velocidade = 5f;
+                tempoDeEspera = 0.7f;
+            }
+
+            if (Health.currentHealth <= 5f)
+            {
+                AttackCooldownTarget = 2f;
+                velocidade = 9f;
+                tempoDeEspera = 0.5f;
+            }
+
+            if (Health.currentHealth <= 2f)
+            {
+                AttackCooldownTarget = 2f;
+                velocidade = 15f;
+                tempoDeEspera = 0.3f;
+            }
+
+            if (Health.currentHealth <= 0f)
+            {
+                Health.isDead = true;
+                cutSceneBoss.isFighting = false;
+                StopAllCoroutines();
+            }
+
             if (isRight)
             {
                 transform.localScale = new Vector3(1, 1, 1);
@@ -79,29 +110,27 @@ public class Boss : MonoBehaviour
                 StopAllCoroutines();
                 Debug.Log("Atacando o jogador!");
                 StartCoroutine(Attack());
-                if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
-                {
-                    Debug.Log("Ataque finalizado");
-                    StartCoroutine(Patrulha());
-                    estaPatrulhando = true;
-                }
             }
 
-            if (projetilAttack)
+            if (projetilAttack && !jaAtirou)
             {
-                if (projetilInstance == null)
-                {
-                    Vector2 direcao = playerInputSystem.transform.position - pontoDeTiro.position;
-                    projetilInstance = Instantiate(projetilPrefab, pontoDeTiro.position, Quaternion.identity);
-                    projetilInstance.GetComponent<Rigidbody2D>().linearVelocity = direcao.normalized * forcaTiro;
+                Vector2 direcao = playerInputSystem.transform.position - pontoDeTiro.position;
+                GameObject projetilInstance = Instantiate(projetilPrefab, pontoDeTiro.position, Quaternion.identity);
+                projetilInstance.GetComponent<Rigidbody2D>().linearVelocity = direcao.normalized * forcaTiro;
 
-                    //O objeto rotaciona para a direção do tiro.
-                    float angulo = Mathf.Atan2(direcao.y, direcao.x) * Mathf.Rad2Deg;
-                    projetilInstance.transform.rotation = Quaternion.AngleAxis(angulo, Vector3.forward);
+                float angulo = Mathf.Atan2(direcao.y, direcao.x) * Mathf.Rad2Deg;
+                projetilInstance.transform.rotation = Quaternion.AngleAxis(angulo, Vector3.forward);
 
-                    Destroy(projetilInstance, 2f);
-                    projetilAttack = false;
-                }
+                Destroy(projetilInstance, 1.5f);
+                AttackCooldown = 0;
+
+                jaAtirou = true;
+            }
+
+            // Resetar o flag quando o ataque terminar
+            if (!projetilAttack)
+            {
+                jaAtirou = false;
             }
         }
 
@@ -118,11 +147,7 @@ public class Boss : MonoBehaviour
             patrulhaCoroutine = null;
         }
 
-        yield return new WaitForSeconds(0.4f);
-        projetilAttack = true;
-
-        yield return new WaitForSeconds(0.6f);
-
+        yield return new WaitForSeconds(2.2f);
         Debug.Log("Ataque finalizado");
         IsAttacking = false;
 

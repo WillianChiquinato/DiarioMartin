@@ -11,8 +11,10 @@ public class PlayerInputSystem : MonoBehaviour
     public GameObject bulletPrefab;
 
     public GameObject EstilingueObject;
-    public static bool PlayerWeaponActive = false;
-    public static bool PlayerEstilingueActive = false;
+    
+    //Mudar na build normal.
+    public static bool PlayerWeaponActive = true;
+    public static bool PlayerEstilingueActive = true;
     public GameObject WeaponObject;
     public Vector3 mousePosition;
 
