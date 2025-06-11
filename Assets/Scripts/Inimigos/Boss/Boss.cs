@@ -32,6 +32,8 @@ public class Boss : MonoBehaviour
     public bool isRight = true;
     public Health Health;
 
+    public LevelLoader transicao;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -39,6 +41,8 @@ public class Boss : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         playerInputSystem = FindFirstObjectByType<PlayerInputSystem>();
         cutSceneBoss = FindFirstObjectByType<CutSceneBoss>();
+
+        transicao = GameObject.FindFirstObjectByType<LevelLoader>();
     }
 
     void Update()
@@ -52,6 +56,8 @@ public class Boss : MonoBehaviour
         {
             rb.bodyType = RigidbodyType2D.Static;
             rb.linearVelocity = Vector2.zero;
+
+            transicao.Transicao("Menu");
             Destroy(gameObject, 3f);
         }
         else

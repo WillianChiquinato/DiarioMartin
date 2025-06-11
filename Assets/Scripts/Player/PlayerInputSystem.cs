@@ -3,15 +3,18 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerInputSystem : MonoBehaviour
 {
+    public Health playerHealth;
+    public LevelLoader transicao;
     public static PlayerInputManager playerInputManager { get; set; }
     public Camera cameraMouse;
     public GameObject bulletPrefab;
 
     public GameObject EstilingueObject;
-    
+
     //Mudar na build normal.
     public static bool PlayerWeaponActive = true;
     public static bool PlayerEstilingueActive = true;
@@ -28,6 +31,7 @@ public class PlayerInputSystem : MonoBehaviour
 
     private void Awake()
     {
+        playerHealth = GetComponent<Health>();
         cameraMouse = FindFirstObjectByType<Camera>();
         if (!PlayerWeaponActive)
         {
@@ -38,8 +42,19 @@ public class PlayerInputSystem : MonoBehaviour
         EstilingueObject.SetActive(false);
     }
 
+    void Start()
+    {
+        transicao = GameObject.FindFirstObjectByType<LevelLoader>();
+    }
+
     void Update()
     {
+        if (playerHealth.isDead)
+        {
+            //Cena atual.
+            StartCoroutine(transicaoPlayerDeath());
+        }
+
         if (!PlayerWeaponActive)
         {
             WeaponObject.SetActive(false);
@@ -138,5 +153,11 @@ public class PlayerInputSystem : MonoBehaviour
         Vector3 mousePos = PointPosition.action.ReadValue<Vector2>();
         mousePos.z = Camera.main.nearClipPlane;
         return Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    IEnumerator transicaoPlayerDeath()
+    {
+        yield return new WaitForSeconds(1.5f);
+        transicao.Transicao(SceneManager.GetActiveScene().name);
     }
 }

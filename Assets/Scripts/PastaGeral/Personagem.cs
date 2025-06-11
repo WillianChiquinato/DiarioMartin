@@ -14,15 +14,12 @@ public class Personagem : MonoBehaviour
     public Vector2 PointerInput { get => pointerInput; set => pointerInput = value; }
     public Vector2 MovementInput { get => movementInput; set => movementInput = value; }
 
-    private LevelLoader transicao;
 
     private void Awake()
     {
         agentAnimations = GetComponentInChildren<PlayerAnimation>();
         weaponParent = GetComponentInChildren<WeaponParent>();
         agentMover = GetComponent<PersonagemMover>();
-
-        transicao = GameObject.FindFirstObjectByType<LevelLoader>();
     }
 
     public void PerformAttack()
@@ -35,12 +32,6 @@ public class Personagem : MonoBehaviour
 
     private void Update()
     {
-        if (GameObject.Find("Player").GetComponent<Health>().isDead)
-        {
-            //Cena atual.
-            StartCoroutine(transicaoPlayerDeath());
-        }
-
         if (!gameObject.GetComponent<Health>().isDead)
         {
             agentMover.movimentInput = MovementInput;
@@ -58,11 +49,5 @@ public class Personagem : MonoBehaviour
         Vector2 lookDirection = pointerInput - (Vector2)transform.position;
         agentAnimations.RotateToPointer(lookDirection);
         agentAnimations.PlayAnimation(MovementInput);
-    }
-
-    IEnumerator transicaoPlayerDeath()
-    {
-        yield return new WaitForSeconds(1.5f);
-        transicao.Transicao(SceneManager.GetActiveScene().name);
     }
 }
